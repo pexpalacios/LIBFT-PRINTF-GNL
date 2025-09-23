@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is.c                                            :+:      :+:    :+:   */
+/*   ft_isx.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: penpalac <penpalac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 16:16:14 by penpalac          #+#    #+#             */
-/*   Updated: 2025/09/22 18:05:04 by penpalac         ###   ########.fr       */
+/*   Updated: 2025/09/23 16:02:54 by penpalac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// A couple of simple functions that determine the type of an int
+// A couple of simple functions that check what an int 'c' is
 // Names are self-explanatory
 
 #include "libft.h"

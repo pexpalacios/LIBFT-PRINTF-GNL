@@ -6,7 +6,7 @@
 /*   By: penpalac <penpalac@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/22 17:18:50 by penpalac          #+#    #+#             */
-/*   Updated: 2025/09/22 18:17:11 by penpalac         ###   ########.fr       */
+/*   Updated: 2025/09/23 16:05:10 by penpalac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 #include "libft.h"
 
-static void	free_strs(char **strs, int j);
 static int	countwords(char const *s, char c);
 
 // Splits a char* into a char** using char 'c' as the mark
@@ -44,7 +43,7 @@ char	**ft_split(char const *s, char c)
 			strs[j] = (char *)malloc(((i - start) + 1) * sizeof(char));
 			if (!strs[j])
 			{
-				free_strs(strs, j);
+				free_matrix(strs);
 				return (NULL);
 			}
 			while (k < (i - start))
@@ -57,19 +56,6 @@ char	**ft_split(char const *s, char c)
 	}
 	strs[j] = NULL;
 	return (strs);
-}
-
-// Frees a matrix of char*
-static void	free_strs(char **strs, int j)
-{
-	int	i = 0;
-
-	while (i < j)
-	{
-		free(strs[i]);
-		i++;
-	}
-	free(strs);
 }
 
 // Helps count the amount of char* the new matrix will have

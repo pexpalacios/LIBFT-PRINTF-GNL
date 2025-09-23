@@ -2,7 +2,7 @@ NAME = libft.a
 CC	= cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_convert.c ft_isx.c ft_lst.c ft_memory.c ft_printf.c ft_putfd.c ft_split.c ft_str.c get_next_line.c
+SRCS = ft_clean.c ft_convert.c ft_isx.c ft_lst.c ft_memory.c ft_printf.c ft_putfd.c ft_split.c ft_str.c get_next_line.c
 
 OBJ_DIR = objs/
 

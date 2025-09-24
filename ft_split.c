@@ -49,6 +49,7 @@ char	**ft_split(char const *s, char c)
 			while (k < (i - start))
 			{
 				strs[j][k] = s[start + i];
+				k++;
 			}
 			strs[j][k] = '\0';
 		}

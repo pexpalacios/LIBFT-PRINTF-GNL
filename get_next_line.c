@@ -106,7 +106,7 @@ char	*gnl_strjoin(char *s1, char *s2)
 	while (s2[j])
 	{
 		s3[i + j] = s2[j];
-		i++;
+		j++;
 	}
 	free(s1);
 	return (s3);

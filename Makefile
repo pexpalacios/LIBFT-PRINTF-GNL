@@ -9,7 +9,7 @@ OBJ_DIR = objs/
 OBJ = $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
 
 BLUE = \033[1;34m
-RED = \033[1;31m
+YELLOW = \033[1;33m
 GREEN = \033[1;32m
 RESET = \033[0m
 
@@ -33,11 +33,11 @@ $(OBJ_DIR):
 
 clean:
 	@rm -rf $(OBJ_DIR)
-	@echo "$(RED) Cleaned up objects."
+	@echo "$(YELLOW)[Cleaned up objects]$(RESET)"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(RED) Removed library $(NAME)."
+	@echo "$(YELLOW)[$(NAME) removed]$(RESET)"
 
 re: fclean all
 
